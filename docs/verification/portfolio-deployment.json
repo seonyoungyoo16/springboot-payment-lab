@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-18T08:52:26.364Z",
+  "url": "https://seonyoungyoo16.github.io/portfolio/#project/payment",
+  "portfolioSource": "d7bcb0d72e077d0d9f4ac4b3ede0dc587bfaf84d",
+  "independentPaymentSource": "4b44cb606c2a77af45e5f16dbc4c34c33a29afbb",
+  "pagesCommit": "f15e1866a15df32143eb7904702bb9bcf900123a",
+  "deploymentRun": "https://github.com/seonyoungyoo16/portfolio/actions/runs/39112960223",
+  "deploymentConclusion": "success",
+  "actualLocalBackend": {
+    "browser": 64,
+    "sqlAndApi": 12,
+    "externalPgTestsRun": false,
+    "realMoneyMoved": false
+  },
+  "publishedStaticExperience": {
+    "paymentGroups": 18,
+    "loginGroups": 18,
+    "signupGroups": 18,
+    "sourceAnchors": 37,
+    "sourceHashesVerified": true,
+    "resourceHashesVerified": 3
+  },
+  "scope": "Actual independent merchant/Local PSP verification and published static browser simulation are separate evidence. Later documentation-only commits do not require rebuilding the deployed assets."
+}

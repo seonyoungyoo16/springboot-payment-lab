@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "finishedAt": "2026-10-18T08:44:47.419Z",
+  "independentFreshCheckout": true,
+  "downloadedPinnedArchives": true,
+  "backendPassed": 12,
+  "freshBrowserIds": [
+    "P03",
+    "D06",
+    "C01",
+    "W04"
+  ],
+  "fullProcessAndDatabasesRestarted": true,
+  "facts": [
+    {
+      "database": "merchant",
+      "count": 8,
+      "factsHash": "1cb5f0070b033e92d443751aa7b91fa8ff097fcceb197cd39bfbb70a0357c917",
+      "systemHash": "9a6e8dda98d65b9b1eba07e4d232b934b0efa6f150799782f6e91570114a6fbf"
+    },
+    {
+      "database": "psp",
+      "count": 8,
+      "factsHash": "034686fddfa558c22b50ef1b4ebbbfb9a6763660226151c091796d946423a402",
+      "systemHash": "b0eb5e93b7e246b5e50e7371bc7cf71bf011e109e133290e54c3c810340b8091"
+    }
+  ]
+}

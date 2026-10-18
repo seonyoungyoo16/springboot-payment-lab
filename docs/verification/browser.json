@@ -1,0 +1,455 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-18T08:36:05.523Z",
+  "finishedAt": "2026-10-18T08:39:23.672Z",
+  "tests": [
+    {
+      "id": "P01",
+      "title": "P01 서버 가격으로 주문을 만들고 PG 승인 없이 저장",
+      "status": "passed",
+      "duration": 582,
+      "error": null
+    },
+    {
+      "id": "P02",
+      "title": "P02 실제 PG 인증과 return GET은 승인과 분리",
+      "status": "passed",
+      "duration": 692,
+      "error": null
+    },
+    {
+      "id": "P03",
+      "title": "P03 실제 승인 202 접수와 PG·상점 원자 반영",
+      "status": "passed",
+      "duration": 2768,
+      "error": null
+    },
+    {
+      "id": "P04",
+      "title": "P04 실제 PG 인증 거절과 사용자 취소는 금전 효과 없음",
+      "status": "passed",
+      "duration": 1232,
+      "error": null
+    },
+    {
+      "id": "P05",
+      "title": "P05 PG 종결 승인 거절은 FAILED_FINAL·원장 0",
+      "status": "passed",
+      "duration": 911,
+      "error": null
+    },
+    {
+      "id": "P06",
+      "title": "P06 종결 비승인 뒤 새 시도는 새 PG 주문번호로 승인",
+      "status": "passed",
+      "duration": 1321,
+      "error": null
+    },
+    {
+      "id": "P07",
+      "title": "P07 실제 기한 경과 뒤 승인 POST는 새 금융 요청 없음",
+      "status": "passed",
+      "duration": 15921,
+      "error": null
+    },
+    {
+      "id": "P08",
+      "title": "P08 새로고침과 A→B 조회는 기존 작업·주문 복구",
+      "status": "passed",
+      "duration": 1262,
+      "error": null
+    },
+    {
+      "id": "D01",
+      "title": "D01 같은 구매 의도는 다른 키에도 하나, 명시한 새 의도는 별도",
+      "status": "passed",
+      "duration": 517,
+      "error": null
+    },
+    {
+      "id": "D02",
+      "title": "D02 동일 승인 키를 A/B에 동시에 보내도 작업과 거래 하나",
+      "status": "passed",
+      "duration": 891,
+      "error": null
+    },
+    {
+      "id": "D03",
+      "title": "D03 같은 키의 금액·통화·대상 변경은 최초 매핑을 보존",
+      "status": "passed",
+      "duration": 870,
+      "error": null
+    },
+    {
+      "id": "D04",
+      "title": "D04 같은 시도에 서로 다른 승인 키도 canonical 작업 하나",
+      "status": "passed",
+      "duration": 870,
+      "error": null
+    },
+    {
+      "id": "D05",
+      "title": "D05 UNKNOWN에 새 키는 기존 작업으로, 새 시도는 차단",
+      "status": "passed",
+      "duration": 2357,
+      "error": null
+    },
+    {
+      "id": "D06",
+      "title": "D06 두 브라우저 문맥 A/B의 20개 병렬 제출도 금융 효과 하나",
+      "status": "passed",
+      "duration": 1224,
+      "error": null
+    },
+    {
+      "id": "D07",
+      "title": "D07 접수 커밋 뒤 실제 브라우저 응답 유실은 같은 키로 복구",
+      "status": "passed",
+      "duration": 884,
+      "error": null
+    },
+    {
+      "id": "D08",
+      "title": "D08 실제 PG 키 안전 기한 뒤에는 변경 재전송 없이 REVIEW",
+      "status": "passed",
+      "duration": 14236,
+      "error": null
+    },
+    {
+      "id": "T01",
+      "title": "T01 브라우저 금액·통화·PG 주문번호 변조 거부",
+      "status": "passed",
+      "duration": 729,
+      "error": null
+    },
+    {
+      "id": "T02",
+      "title": "T02 마스터 가격 변경 뒤에도 기존 주문은 가격 스냅샷 유지",
+      "status": "passed",
+      "duration": 918,
+      "error": null
+    },
+    {
+      "id": "T03",
+      "title": "T03 PG 금액·통화·상점·환경 불일치 응답은 수락 없이 REVIEW",
+      "status": "passed",
+      "duration": 3014,
+      "error": null
+    },
+    {
+      "id": "T04",
+      "title": "T04 PG 승인 후 상점 커밋 실패는 부분 반영 없이 재조회 복구",
+      "status": "passed",
+      "duration": 2304,
+      "error": null
+    },
+    {
+      "id": "T05",
+      "title": "T05 동기 응답·웹훅·대사 경쟁도 원장·outbox 한 번",
+      "status": "passed",
+      "duration": 4428,
+      "error": null
+    },
+    {
+      "id": "T06",
+      "title": "T06 10000 승인 뒤 3000·2000 부분 취소의 양쪽 합계 일치",
+      "status": "passed",
+      "duration": 1261,
+      "error": null
+    },
+    {
+      "id": "T07",
+      "title": "T07 영수증 소비 중단·중복 outbox 재생도 최신 취소 버전 유지",
+      "status": "passed",
+      "duration": 2674,
+      "error": null
+    },
+    {
+      "id": "T08",
+      "title": "T08 예상 밖 추가 PG 승인도 사실 기록 후 별도 보상",
+      "status": "passed",
+      "duration": 1844,
+      "error": null
+    },
+    {
+      "id": "C01",
+      "title": "C01 실제 화면 전액 취소는 원승인 보존·취소 하나·CLOSED",
+      "status": "passed",
+      "duration": 2939,
+      "error": null
+    },
+    {
+      "id": "C02",
+      "title": "C02 부분 취소 화면에서 예약과 확정 금액을 구분",
+      "status": "passed",
+      "duration": 3087,
+      "error": null
+    },
+    {
+      "id": "C03",
+      "title": "C03 잘못된 취소 금액과 전액 전용 수단은 예약 전에 거부",
+      "status": "passed",
+      "duration": 974,
+      "error": null
+    },
+    {
+      "id": "C04",
+      "title": "C04 같은 취소 키의 A/B 경쟁은 작업·예약·취소 하나",
+      "status": "passed",
+      "duration": 1087,
+      "error": null
+    },
+    {
+      "id": "C05",
+      "title": "C05 다른 키의 동시 7000원 취소 두 개는 하나만 선점",
+      "status": "passed",
+      "duration": 1110,
+      "error": null
+    },
+    {
+      "id": "C06",
+      "title": "C06 완료 뒤 낡은 버전의 새 키는 409·명시한 새 버전만 추가 취소",
+      "status": "passed",
+      "duration": 1268,
+      "error": null
+    },
+    {
+      "id": "C07",
+      "title": "C07 PG 취소 후 HTTP 응답 제거는 예약을 유지한 채 조회 정산",
+      "status": "passed",
+      "duration": 1252,
+      "error": null
+    },
+    {
+      "id": "C08",
+      "title": "C08 자신의 취소 종결 거절은 예약 해제·승인 잔액 보존",
+      "status": "passed",
+      "duration": 1076,
+      "error": null
+    },
+    {
+      "id": "C09",
+      "title": "C09 전송 중 종료 요청은 늦은 승인 기록·보상 뒤 CLOSED",
+      "status": "passed",
+      "duration": 3411,
+      "error": null
+    },
+    {
+      "id": "C10",
+      "title": "C10 승인·종료 경쟁과 보상 응답 유실·작업자 재시작",
+      "status": "passed",
+      "duration": 4117,
+      "error": null
+    },
+    {
+      "id": "W01",
+      "title": "W01 서명 웹훅은 inbox 접수 뒤 PG 조회로 반영",
+      "status": "passed",
+      "duration": 5409,
+      "error": null
+    },
+    {
+      "id": "W02",
+      "title": "W02 eventId 10회와 실제 ACK 유실에도 inbox·원장 하나",
+      "status": "passed",
+      "duration": 1420,
+      "error": null
+    },
+    {
+      "id": "W03",
+      "title": "W03 취소 이벤트부터 전달해도 현재 PG 사실로 수렴·역행 없음",
+      "status": "passed",
+      "duration": 1240,
+      "error": null
+    },
+    {
+      "id": "W04",
+      "title": "W04 잘못된 서명·변경 본문·만료·같은 ID 다른 본문 거부",
+      "status": "passed",
+      "duration": 948,
+      "error": null
+    },
+    {
+      "id": "W05",
+      "title": "W05 웹훅 누락과 승인 응답 유실은 DB 작업자 대사로 복구",
+      "status": "passed",
+      "duration": 2223,
+      "error": null
+    },
+    {
+      "id": "W06",
+      "title": "W06 취소 전 PG 조회가 늦게 돌아와도 이미 기록한 취소 보존",
+      "status": "passed",
+      "duration": 4759,
+      "error": null
+    },
+    {
+      "id": "W07",
+      "title": "W07 외부 취소와 자기 취소 불명 혼합은 금액으로 성공 추정 금지",
+      "status": "passed",
+      "duration": 1275,
+      "error": null
+    },
+    {
+      "id": "W08",
+      "title": "W08 대사 소진 후 운영자 권한·사유·감사와 조회 재개",
+      "status": "passed",
+      "duration": 2778,
+      "error": null
+    },
+    {
+      "id": "F01",
+      "title": "F01 승인 접수 커밋 전 실패는 작업·매핑·job 롤백",
+      "status": "passed",
+      "duration": 924,
+      "error": null
+    },
+    {
+      "id": "F02",
+      "title": "F02 접수 커밋 후 앱 실제 종료는 B가 영속 작업 처리",
+      "status": "passed",
+      "duration": 4087,
+      "error": null
+    },
+    {
+      "id": "F03",
+      "title": "F03 PG 도착 전 실제 TCP 차단 뒤 같은 작업 복구",
+      "status": "passed",
+      "duration": 2373,
+      "error": null
+    },
+    {
+      "id": "F04",
+      "title": "F04 실제 PG 승인 HTTP 응답 제거 뒤 조회로 한 번 복구",
+      "status": "passed",
+      "duration": 2217,
+      "error": null
+    },
+    {
+      "id": "F05",
+      "title": "F05 PG 요청 중 lease 소유 앱 실제 종료 후 회수",
+      "status": "passed",
+      "duration": 8162,
+      "error": null
+    },
+    {
+      "id": "F06",
+      "title": "F06 PG 성공 뒤 실제 상점 DB TCP 차단·복구",
+      "status": "passed",
+      "duration": 12117,
+      "error": null
+    },
+    {
+      "id": "F07",
+      "title": "F07 신규 접수 중 Redis 실제 TCP 차단은 신규 작업 없는 503",
+      "status": "passed",
+      "duration": 2221,
+      "error": null
+    },
+    {
+      "id": "F08",
+      "title": "F08 Redis 프로세스 실제 중단 중 기존 DB 작업자는 승인 처리",
+      "status": "passed",
+      "duration": 9552,
+      "error": null
+    },
+    {
+      "id": "F09",
+      "title": "F09 취소 예약 커밋 전 롤백과 커밋 후 실제 앱 종료 비교",
+      "status": "passed",
+      "duration": 4582,
+      "error": null
+    },
+    {
+      "id": "F10",
+      "title": "F10 PG 취소 후 실제 DB 장애에도 예약을 잃지 않고 정산",
+      "status": "passed",
+      "duration": 12383,
+      "error": null
+    },
+    {
+      "id": "F11",
+      "title": "F11 웹훅 수신 DB 장애는 성공 ACK 없음·복구 후 ACK 유실 재전송",
+      "status": "passed",
+      "duration": 1082,
+      "error": null
+    },
+    {
+      "id": "F12",
+      "title": "F12 A 종료 뒤 B 처리와 양쪽 실제 재시작은 DB 결과 복원",
+      "status": "passed",
+      "duration": 5615,
+      "error": null
+    },
+    {
+      "id": "S01",
+      "title": "S01 승인·취소·종료·복구 POST의 CSRF·Origin 거부",
+      "status": "passed",
+      "duration": 1180,
+      "error": null
+    },
+    {
+      "id": "S02",
+      "title": "S02 타인·다른 실행의 주문·작업·결제 소유권 거부",
+      "status": "passed",
+      "duration": 1347,
+      "error": null
+    },
+    {
+      "id": "S03",
+      "title": "S03 ticket·state 재사용·주문 키 대입·임의 PG URL 거부",
+      "status": "passed",
+      "duration": 739,
+      "error": null
+    },
+    {
+      "id": "S04",
+      "title": "S04 정수 범위·소수·통화·긴 사유·HTML 데이터 처리",
+      "status": "passed",
+      "duration": 1183,
+      "error": null
+    },
+    {
+      "id": "S05",
+      "title": "S05 A/B 공유 제한·위조 IP 무효·작은 대기열 상한",
+      "status": "passed",
+      "duration": 1902,
+      "error": null
+    },
+    {
+      "id": "S06",
+      "title": "S06 정리된 URL·소스·관찰·브라우저 저장소에 비밀 원문 없음",
+      "status": "passed",
+      "duration": 906,
+      "error": null
+    },
+    {
+      "id": "U01",
+      "title": "U01 자동 관찰은 주문·인증·재인증 기한을 갱신하지 않고 장애는 확인 불가",
+      "status": "passed",
+      "duration": 16000,
+      "error": null
+    },
+    {
+      "id": "U02",
+      "title": "U02 390·768·1440·1800 화면 패널·입력·포커스 사용",
+      "status": "passed",
+      "duration": 707,
+      "error": null
+    },
+    {
+      "id": "U03",
+      "title": "U03 승인·취소 실제 단계·시각·스냅샷과 37개 소스 행·해시 일치",
+      "status": "passed",
+      "duration": 1152,
+      "error": null
+    },
+    {
+      "id": "U04",
+      "title": "U04 실행 중·중복 실행 거부·의도적 실패 진단과 금융 보고서 분리",
+      "status": "passed",
+      "duration": 2424,
+      "error": null
+    }
+  ]
+}

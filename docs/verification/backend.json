@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "finishedAt": "2026-10-18T08:40:14.209Z",
+  "tests": [
+    {
+      "id": "B01",
+      "title": "상점과 PG는 서로 다른 PostgreSQL 클러스터",
+      "status": "passed"
+    },
+    {
+      "id": "B02",
+      "title": "독립 프로세스의 실제 PostgreSQL 버전과 DB 이름",
+      "status": "passed"
+    },
+    {
+      "id": "B03",
+      "title": "논리 승인 작업 하나·키 매핑 복구",
+      "status": "passed"
+    },
+    {
+      "id": "B04",
+      "title": "PG 키·ticket은 상점에서 암호문·HMAC으로 보관",
+      "status": "passed"
+    },
+    {
+      "id": "B05",
+      "title": "승인 원장·작업·주문·outbox 원자 상태",
+      "status": "passed"
+    },
+    {
+      "id": "B06",
+      "title": "취소 접수는 C=0·R=3000 예약을 작업·job과 함께 커밋",
+      "status": "passed"
+    },
+    {
+      "id": "B07",
+      "title": "PG 커밋 응답 제거·결과 불명은 예약 보존",
+      "status": "passed"
+    },
+    {
+      "id": "B08",
+      "title": "강한 작업 식별 증거로 정산·같은 취소 키 재전송",
+      "status": "passed"
+    },
+    {
+      "id": "B09",
+      "title": "남은 7000 전액 취소 후 누적 취소 10000·CLOSED",
+      "status": "passed"
+    },
+    {
+      "id": "B10",
+      "title": "원장 합계·PG 거래 ID·operation 연결 일치",
+      "status": "passed"
+    },
+    {
+      "id": "B11",
+      "title": "중복 outbox 재생 후 최신 영수증과 소비 기록",
+      "status": "passed"
+    },
+    {
+      "id": "B12",
+      "title": "DB 유일 제약은 원장 거래 ID 중복을 거부",
+      "status": "passed"
+    }
+  ]
+}

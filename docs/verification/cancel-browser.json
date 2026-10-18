@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-18T08:23:27.528Z",
+  "finishedAt": "2026-10-18T08:23:49.793Z",
+  "tests": [
+    {
+      "id": "C01",
+      "title": "C01 실제 화면 전액 취소는 원승인 보존·취소 하나·CLOSED",
+      "status": "passed",
+      "duration": 3215,
+      "error": null
+    },
+    {
+      "id": "C02",
+      "title": "C02 부분 취소 화면에서 예약과 확정 금액을 구분",
+      "status": "passed",
+      "duration": 3078,
+      "error": null
+    },
+    {
+      "id": "C03",
+      "title": "C03 잘못된 취소 금액과 전액 전용 수단은 예약 전에 거부",
+      "status": "passed",
+      "duration": 944,
+      "error": null
+    },
+    {
+      "id": "C04",
+      "title": "C04 같은 취소 키의 A/B 경쟁은 작업·예약·취소 하나",
+      "status": "passed",
+      "duration": 1335,
+      "error": null
+    },
+    {
+      "id": "C05",
+      "title": "C05 다른 키의 동시 7000원 취소 두 개는 하나만 선점",
+      "status": "passed",
+      "duration": 1061,
+      "error": null
+    },
+    {
+      "id": "C06",
+      "title": "C06 완료 뒤 낡은 버전의 새 키는 409·명시한 새 버전만 추가 취소",
+      "status": "passed",
+      "duration": 1221,
+      "error": null
+    },
+    {
+      "id": "C07",
+      "title": "C07 PG 취소 후 HTTP 응답 제거는 예약을 유지한 채 조회 정산",
+      "status": "passed",
+      "duration": 2004,
+      "error": null
+    },
+    {
+      "id": "C08",
+      "title": "C08 자신의 취소 종결 거절은 예약 해제·승인 잔액 보존",
+      "status": "passed",
+      "duration": 1332,
+      "error": null
+    },
+    {
+      "id": "C09",
+      "title": "C09 전송 중 종료 요청은 늦은 승인 기록·보상 뒤 CLOSED",
+      "status": "passed",
+      "duration": 3093,
+      "error": null
+    },
+    {
+      "id": "C10",
+      "title": "C10 승인·종료 경쟁과 보상 응답 유실·작업자 재시작",
+      "status": "passed",
+      "duration": 4355,
+      "error": null
+    }
+  ]
+}

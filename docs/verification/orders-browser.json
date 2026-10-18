@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-18T08:15:16.517Z",
+  "finishedAt": "2026-10-18T08:15:42.404Z",
+  "tests": [
+    {
+      "id": "P01",
+      "title": "P01 서버 가격으로 주문을 만들고 PG 승인 없이 저장",
+      "status": "passed",
+      "duration": 1096,
+      "error": null
+    },
+    {
+      "id": "P02",
+      "title": "P02 실제 PG 인증과 return GET은 승인과 분리",
+      "status": "passed",
+      "duration": 782,
+      "error": null
+    },
+    {
+      "id": "P03",
+      "title": "P03 실제 승인 202 접수와 PG·상점 원자 반영",
+      "status": "passed",
+      "duration": 2831,
+      "error": null
+    },
+    {
+      "id": "P04",
+      "title": "P04 실제 PG 인증 거절과 사용자 취소는 금전 효과 없음",
+      "status": "passed",
+      "duration": 1075,
+      "error": null
+    },
+    {
+      "id": "P05",
+      "title": "P05 PG 종결 승인 거절은 FAILED_FINAL·원장 0",
+      "status": "passed",
+      "duration": 858,
+      "error": null
+    },
+    {
+      "id": "P06",
+      "title": "P06 종결 비승인 뒤 새 시도는 새 PG 주문번호로 승인",
+      "status": "passed",
+      "duration": 1271,
+      "error": null
+    },
+    {
+      "id": "P07",
+      "title": "P07 실제 기한 경과 뒤 승인 POST는 새 금융 요청 없음",
+      "status": "passed",
+      "duration": 15869,
+      "error": null
+    },
+    {
+      "id": "P08",
+      "title": "P08 새로고침과 A→B 조회는 기존 작업·주문 복구",
+      "status": "passed",
+      "duration": 1518,
+      "error": null
+    }
+  ]
+}

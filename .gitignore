@@ -1,0 +1,10 @@
+node_modules/
+dist/
+backend/target/
+.mvn-runtime/
+.runtime/
+test-results/
+playwright-report/
+*.log
+.env
+*.tsbuildinfo
